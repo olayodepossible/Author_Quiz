@@ -1,4 +1,5 @@
 import React from 'react'
+import BookTitle from './BookTitle'
 
 function QuizTurn({author, books}) {
   return (
@@ -8,8 +9,7 @@ function QuizTurn({author, books}) {
           </div>
 
           <div className='col-6'>
-              {books.map(title => <p>{ title}</p>)}
-
+              {books.map(title => <BookTitle title = { title}/>)}
           </div>
           
     </div>
