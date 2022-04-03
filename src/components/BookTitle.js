@@ -1,8 +1,8 @@
 import React from 'react'
 
-function BookTitle({title}) {
+function BookTitle({title, onClick}) {
   return (
-    <div className='answer'>
+    <div className='answer' onClick={() => onClick(title)}>
         <h4>{title}</h4> 
     </div>
   )
